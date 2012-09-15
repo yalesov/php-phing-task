@@ -1,0 +1,22 @@
+{
+    "name": "heartsentwined/phing-task",
+    "description": "A collection of Phing Tasks.",
+    "license": "GPL-3.0",
+    "keywords": ["phing"],
+    "homepage": "https://github.com/heartsentwined/phing-task",
+    "authors": [
+        {
+            "name": "heartsentwined",
+            "email": "heartsentwined@cogito-lab.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "classmap": ["src/task/"]
+    },
+    "require": {
+        "php": ">=5.3.3",
+        "phing/phing": "*",
+        "heartsentwined/file-system-manager": "1.*"
+    }
+}

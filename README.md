@@ -14,6 +14,25 @@ A collection of Phing Tasks.
 }
 ```
 
+[Phing](https://github.com/phingofficial/phing) is **not** bundled with this package.
+
+You can install it through Composer and use the CLI at `vendor/bin/phing`:
+
+```json
+{
+    "require": {
+        "phing/phing": "*"
+    }
+}
+```
+
+or through PEAR and use the CLI at `phing`:
+
+```sh
+$ pear channel-discover pear.phing.info
+$ pear install [--alldeps] phing/phing
+```
+
 # Usage
 
 ## RchownTask

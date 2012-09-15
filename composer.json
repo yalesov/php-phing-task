@@ -16,7 +16,6 @@
     },
     "require": {
         "php": ">=5.3.3",
-        "phing/phing": "*",
         "heartsentwined/file-system-manager": "1.*"
     }
 }

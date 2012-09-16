@@ -16,6 +16,7 @@
     },
     "require": {
         "php": ">=5.3.3",
+        "zendframework/zend-file": "2.0.*",
         "heartsentwined/file-system-manager": "1.*"
     }
 }

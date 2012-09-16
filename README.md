@@ -35,6 +35,20 @@ $ pear install [--alldeps] phing/phing
 
 # Usage
 
+## ClassmapTask
+
+Generate a classmap for the directory `foo/library` (and its subdirectories), save it at `foo/autoload_classmap.php`.
+
+```xml
+<project>
+    <target>
+        <includepath classpath="vendor/heartsentwined/phing-task/src/task" />
+        <taskdef name="classmap" classname="ClassmapTask" />
+        <classmap dir="foo/library" output="foo/autoload_classmap.php" />
+    </target>
+</project>
+```
+
 ## RchownTask
 
 Recursively [chown](http://php.net/manual/en/function.chown.php) the directory `foo/src`, along with all its subdirectories and files, to the user `foouser` and group `foogroup`.

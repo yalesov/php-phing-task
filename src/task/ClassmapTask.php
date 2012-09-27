@@ -12,7 +12,7 @@ class ClassmapTask extends Task
     /**
      * directory to search for class files (recursive)
      *
-     * @param string $dir
+     * @param  string $dir
      * @return void
      */
     public function setDir($dir)
@@ -35,7 +35,7 @@ class ClassmapTask extends Task
     /**
      * output file
      *
-     * @param string $output
+     * @param  string $output
      * @return void
      */
     public function setOutput($output)
@@ -47,7 +47,7 @@ class ClassmapTask extends Task
     /**
      * if error occured, whether build should fail
      *
-     * @param bool $value
+     * @param  bool $value
      * @return void
      */
     public function setFailonerror($value)

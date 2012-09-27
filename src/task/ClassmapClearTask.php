@@ -1,8 +1,6 @@
 <?php
 require_once __DIR__ . '/../../../../autoload.php';
 
-use Zend\File\ClassFileLocator;
-
 class ClassmapClearTask extends Task
 {
     protected $file;
@@ -11,7 +9,7 @@ class ClassmapClearTask extends Task
     /**
      * classmap file
      *
-     * @param string $file
+     * @param  string $file
      * @return void
      */
     public function setFile($file)
@@ -23,7 +21,7 @@ class ClassmapClearTask extends Task
     /**
      * if error occured, whether build should fail
      *
-     * @param bool $value
+     * @param  bool $value
      * @return void
      */
     public function setFailonerror($value)

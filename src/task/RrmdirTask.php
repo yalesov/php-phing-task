@@ -11,7 +11,7 @@ class RrmdirTask extends Task
     /**
      * directory to delete
      *
-     * @param string $dir
+     * @param  string $dir
      * @return void
      */
     public function setDir($dir)
@@ -34,7 +34,7 @@ class RrmdirTask extends Task
     /**
      * if error occured, whether build should fail
      *
-     * @param bool $value
+     * @param  bool $value
      * @return void
      */
     public function setFailonerror($value)

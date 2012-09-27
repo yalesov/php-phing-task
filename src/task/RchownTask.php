@@ -12,7 +12,7 @@ class RchownTask extends Task
     /**
      * file / dir to rchown to
      *
-     * @param string $file
+     * @param  string $file
      * @return void
      */
     public function setFile($file)
@@ -23,7 +23,7 @@ class RchownTask extends Task
     /**
      * user to chown to
      *
-     * @param string $user
+     * @param  string $user
      * @return void
      */
     public function setUser($user)
@@ -34,7 +34,7 @@ class RchownTask extends Task
     /**
      * if error occured, whether build should fail
      *
-     * @param bool $value
+     * @param  bool $value
      * @return void
      */
     public function setFailonerror($value)

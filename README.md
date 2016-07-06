@@ -9,7 +9,7 @@ A collection of Phing Tasks.
 ```json
 {
     "require": {
-        "yalesov/phing-task": "1.*"
+        "yalesov/phing-task": "2.*"
     }
 }
 ```

@@ -9,7 +9,7 @@ A collection of Phing Tasks.
 ```json
 {
     "require": {
-        "heartsentwined/phing-task": "1.*"
+        "yalesov/phing-task": "1.*"
     }
 }
 ```
@@ -42,7 +42,7 @@ Generate a classmap for the directory `foo/library` (and its subdirectories), sa
 ```xml
 <project>
     <target>
-        <includepath classpath="vendor/heartsentwined/phing-task/src/task" />
+        <includepath classpath="vendor/yalesov/phing-task/src/task" />
         <taskdef name="classmap" classname="ClassmapTask" />
         <classmap dir="foo/library" output="foo/autoload_classmap.php" />
     </target>
@@ -56,7 +56,7 @@ Clear the classmap file `foo/autoload_classmap.php`, i.e. set it to `return arra
 ```xml
 <project>
     <target>
-        <includepath classpath="vendor/heartsentwined/phing-task/src/task" />
+        <includepath classpath="vendor/yalesov/phing-task/src/task" />
         <taskdef name="classmap-clear" classname="ClassmapClearTask" />
         <classmap-clear file="foo/autoload_classmap.php" />
     </target>
@@ -70,7 +70,7 @@ Recursively [chown](http://php.net/manual/en/function.chown.php) the directory `
 ```xml
 <project>
     <target>
-        <includepath classpath="vendor/heartsentwined/phing-task/src/task" />
+        <includepath classpath="vendor/yalesov/phing-task/src/task" />
         <taskdef name="rchown" classname="RchownTask" />
         <rchown file="foo/src" user="foouser.foogroup" />
     </target>
@@ -84,7 +84,7 @@ Recursively [rmdir](http://php.net/manual/en/function.rmdir.php) the directory `
 ```xml
 <project>
     <target>
-        <includepath classpath="vendor/heartsentwined/phing-task/src/task" />
+        <includepath classpath="vendor/yalesov/phing-task/src/task" />
         <taskdef name="rrmdir" classname="RrmdirTask" />
         <rrmdir file="foo/src" />
     </target>

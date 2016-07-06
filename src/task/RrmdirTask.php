@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/../../../../autoload.php';
 
-use Heartsentwined\FileSystemManager\FileSystemManager;
+use Yalesov\FileSystemManager\FileSystemManager;
 
 class RrmdirTask extends Task
 {

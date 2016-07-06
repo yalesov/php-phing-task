@@ -5,66 +5,66 @@ use Yalesov\FileSystemManager\FileSystemManager;
 
 class RrmdirTask extends Task
 {
-    protected $dir;
-    protected $failonerror = false;
+  protected $dir;
+  protected $failonerror = false;
 
-    /**
-     * directory to delete
-     *
-     * @param  string $dir
-     * @return void
-     */
-    public function setDir($dir)
-    {
-        if (!is_dir($dir)) {
-            throw new BuildException(sprintf(
-                'Directory does not exist: %s',
-                realpath($dir)
-            ));
-        }
-        if (!is_writable($dir)) {
-            throw new BuildException(sprintf(
-                'Directory is not writable: %s',
-                realpath($dir)
-            ));
-        }
-        $this->dir = realpath($dir);
+  /**
+   * directory to delete
+   *
+   * @param  string $dir
+   * @return void
+   */
+  public function setDir($dir)
+  {
+    if (!is_dir($dir)) {
+      throw new BuildException(sprintf(
+        'Directory does not exist: %s',
+        realpath($dir)
+      ));
     }
-
-    /**
-     * if error occured, whether build should fail
-     *
-     * @param  bool $value
-     * @return void
-     */
-    public function setFailonerror($value)
-    {
-        $this->failonerror = $value;
+    if (!is_writable($dir)) {
+      throw new BuildException(sprintf(
+        'Directory is not writable: %s',
+        realpath($dir)
+      ));
     }
+    $this->dir = realpath($dir);
+  }
 
-    /**
-     * init
-     *
-     * @return void
-     */
-    public function init()
-    {
-    }
+  /**
+   * if error occured, whether build should fail
+   *
+   * @param  bool $value
+   * @return void
+   */
+  public function setFailonerror($value)
+  {
+    $this->failonerror = $value;
+  }
 
-    /**
-     * main method
-     *
-     * @return void
-     */
-    public function main()
-    {
-        if (!$this->dir) throw new BuildException('dir must be set');
+  /**
+   * init
+   *
+   * @return void
+   */
+  public function init()
+  {
+  }
 
-        FileSystemManager::rrmdir($this->dir);
+  /**
+   * main method
+   *
+   * @return void
+   */
+  public function main()
+  {
+    if (!$this->dir) throw new BuildException('dir must be set');
 
-        $this->log(sprintf(
-            'Recursively deleted the directory \'%s\'',
-            $this->dir
-        ));
-    }
+    FileSystemManager::rrmdir($this->dir);
+
+    $this->log(sprintf(
+      'Recursively deleted the directory \'%s\'',
+      $this->dir
+    ));
+  }
 }

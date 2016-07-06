@@ -1,33 +1,33 @@
 {
-    "name": "yalesov/phing-task",
-    "description": "A collection of Phing Tasks.",
-    "keywords": ["phing"],
-    "authors": [
-        {
-            "name": "Yulij Andreevich Lesov",
-            "email": "yalesov@gmail.com"
-        }
-    ],
-    "require": {
-        "php": ">=5.3.3",
-        "zendframework/zend-file": "2.*",
-        "yalesov/file-system-manager": "2.*"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "*"
-    },
-    "autoload": {
-        "classmap": ["src/task/"]
-    },
-    "license": "ISC",
-    "homepage": "https://github.com/yalesov/php-phing-task",
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/yalesov/php-phing-task"
-        }
-    ],
-    "support": {
-        "issues": "https://github.com/yalesov/php-phing-task/issues"
+  "name": "yalesov/phing-task",
+  "description": "A collection of Phing Tasks.",
+  "keywords": ["phing"],
+  "authors": [
+    {
+      "name": "Yulij Andreevich Lesov",
+      "email": "yalesov@gmail.com"
     }
+  ],
+  "require": {
+    "php": ">=5.3.3",
+    "zendframework/zend-file": "2.*",
+    "yalesov/file-system-manager": "2.*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*"
+  },
+  "autoload": {
+    "classmap": ["src/task/"]
+  },
+  "license": "ISC",
+  "homepage": "https://github.com/yalesov/php-phing-task",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/yalesov/php-phing-task"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/yalesov/php-phing-task/issues"
+  }
 }
